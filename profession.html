@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <title>Веб-програмування - Лабораторна робота</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="./img/favicons/favicon.ico" rel="icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicons/site.webmanifest">
+
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">-->
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="./css/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/animate.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow-sm py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="./index.html" class="navbar-brand d-block d-lg-none">
+            <h2 class="main-color fw-bold m-0">Богдан Д.</h2>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="./index.html" class="nav-item nav-link">Головна</a>
+                <a href="./index.html#about" class="nav-item nav-link">Про мене</a>
+                <a href="./index.html#hobby" class="nav-item nav-link">Захоплення</a>
+                <a href="./profession.html" class="nav-item nav-link active">Моя професія</a>
+                <a href="./education.html" class="nav-item nav-link">Навчання</a>
+                <a href="./contact.html" class="nav-item nav-link">Контакти</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Expertise Start -->
+    <div class="container-xxl pty-6 pb-5" id="skill">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-5">Навички та Досвід</h1>
+                    <h3 class="mb-4">Основні Технології</h3>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">HTML | CSS</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">PHP</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Git</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Database Administration</h6>
+                                    <h6 class="font-weight-bold">70%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Javascript</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Python</h6>
+                                    <h6 class="font-weight-bold">75%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Linux Operations</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">CI | CD</h6>
+                                    <h6 class="font-weight-bold">80%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <ul class="nav nav-pills rounded-3 border border-2 secondary-border mb-5">
+                        <li class="nav-item w-50">
+                            <a class="nav-link w-100 py-3 fs-5 text-center active" data-bs-toggle="pill" href="#tab-1">Робота</a>
+                        </li>
+                        <li class="nav-item w-50">
+                            <a class="nav-link w-100 py-3 fs-5 text-center" data-bs-toggle="pill" href="#tab-2">Освіта</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>DevOps and Operations</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="secondary-color mb-1">2020 - 2024</p>
+                                    <h6 class="mb-0">*Конфіденційно* (Text Analytics System + ETL)</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Site Reliability Engineer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="secondary-color mb-1">2019 - 2020</p>
+                                    <h6 class="mb-0">*Конфіденційно* (ETL pipeline + Clarabridge Platform)</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Software Architect</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="secondary-color mb-1">2017 - 2019</p>
+                                    <h6 class="mb-0">Компанія: Betkey</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Full Stack Developer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="secondary-color mb-1">2014 - 2017</p>
+                                    <h6 class="mb-0">Компанія: Exaloc</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>ІНФОТЕХ - Автоматизація та комп'ютерно-інтегровані технології</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="secondary-color mb-1">2024 - 2026</p>
+                                    <h6 class="mb-0">Черкаський Національний Університет ім. Б.Хмельницього</h6>
+                                    <span class="badge text-bg-primary">Бакалавр (поточна)</span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>ФІТБМК <br>-<br> Біомедична Кібернетика</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="secondary-color mb-1">2010 - 2013</p>
+                                    <h6 class="mb-0">Черкаський Національний Університет ім. Б.Хмельницього</h6>
+                                    <span class="badge text-bg-warning">Бакалавр (незакінчена)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Expertise End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light my-5 py-3" id="service">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Мої Послуги</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-warning py-3 px-5" href="./contact.html">Зв'язатися зі мною</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon bg-icon-1 flex-shrink-0 mb-3">
+                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Development</h4>
+                            <h6 class="mb-3">Backend | Frontend | Інтеграція сторонніх сервісів</h6>
+                            <span>Розробка веб сервісів під ключ для вашого бізнесу.</span><br>
+                            <span>Backend: PHP, NodeJS, Python</span><br>
+                            <span>Frontend: React.JS, vanilla Javascript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon bg-icon-2 flex-shrink-0 mb-3">
+                            <i class="fa fa-code-branch fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Operations</h4>
+                            <h6 class="mb-3">DevOps | SRE | CI/CD</h6>
+                            <span>Послуги підтримки ІТ-продуктів. Налаштування процесів деплою. Створення додаткових середовищ.</span>
+                            <span>GitOps, контейнерезація, тестування та розгортання білдів. Моніторинг та сповіщення.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon bg-icon-3 flex-shrink-0 mb-3">
+                            <i class="fa fa-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Migrations and Performance</h4>
+                            <h6 class="mb-3">Міграція баз даних | Масштабування навантаження</h6>
+                            <span>Міграції баз даних. Оптимізація швидкості роботи, розподілення, масштабування ключових і високонавантажених вузлів.</span>
+                            <span>Тестування високих навантажень і виявлення слабких місць.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon bg-icon-4 flex-shrink-0 mb-3">
+                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Management</h4>
+                            <h6 class="mb-3">Створення команд | Управління проектами</h6>
+                            <span>Управління командами розробників. Створення та налаштування процесів розробки, SDLC. Впровадження нових технічних рішень.</span>
+                            <span>Проектний менеджмент Agile / Scrum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
+                    &copy; Богдан Д., лабораторна робота з веб-програмування
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    Виконано в 2024 р.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!--    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>-->
+    <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>-->
+    <script src="./js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/wow/wow.min.js"></script>
+    <script src="./js/easing/easing.min.js"></script>
+    <script src="./js/waypoints/waypoints.min.js"></script>
+    <script src="./js/typed/typed.min.js"></script>
+    <script src="./js/counterup/counterup.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
