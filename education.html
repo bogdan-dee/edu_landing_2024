@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <title>Веб-програмування - Лабораторна робота</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="./img/favicons/favicon.ico" rel="icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicons/site.webmanifest">
+
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">-->
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="./css/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/animate.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow-sm py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="./index.html" class="navbar-brand d-block d-lg-none">
+            <h2 class="main-color fw-bold m-0">Богдан Д.</h2>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="./index.html" class="nav-item nav-link">Головна</a>
+                <a href="./index.html#about" class="nav-item nav-link">Про мене</a>
+                <a href="./index.html#hobby" class="nav-item nav-link">Захоплення</a>
+                <a href="./profession.html" class="nav-item nav-link">Моя професія</a>
+                <a href="./education.html" class="nav-item nav-link active">Навчання</a>
+                <a href="./contact.html" class="nav-item nav-link">Контакти</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- University Start -->
+    <div class="container-fluid bg-light pty-6" id="university">
+        <div class="container">
+            <h1 class="text-center">Черкаський національний університет ім. Б. Хмельницького</h1>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="row mb-5">
+                        <div class="col-lg-12 text-center">
+                            <img class="img-fluid rounded university-image" src="img/cdu-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <img class="img-fluid rounded-3 university-image" src="img/cdu-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="align-items-center mb-5">
+                        <div class="years flex-shrink-0 text-center me-4 mb-5">
+                            <h2 class="display-5">Засновано у 1921р.</h2>
+                            <h3 class="display-6">понад 7000 студентів</h3>
+                        </div>
+                        <h3 class="mb-0">Структура університету:</h3>
+                        <p class="mb-4">
+                            У Черкаському національнму університеті 8 навчально-наукових інститутів, 2 факультети, 4 навчально-наукові центи та військова кафедра, 16 науково-дослідних інститутів і науково-дослідних центрів, 10 науково-дослідних лабораторій і 14 наукових шкіл, 7 спеціалізованих вчених рад, наукова бібліотека ім. М. Максимовича, центр підтримки технологій та інновацій, центр аналітичних досліджень «Прагма», Звенигородський освітній центр.<br>
+                            Нині університет має 5 сучасних гуртожитків, у яких мешкають близько двох тисяч студентів. Потужною основою кадрового потенціалу Черкаського національного університету є 85 докторів наук, професорів та 285 кандидатів наук, доцентів.
+                        </p>
+                    </div>
+                    <div class="align-items-center mb-2">
+                        <h3 class="mb-0">Наукова й інноваційна діяльність:</h3>
+                        <p class="mb-4">
+                            Підготовка науково-педагогічних кадрів здійснюється в аспірантурі за 14 спеціальностями та докторантурі за 10 спеціальностями. Молоді науковці та студенти об’єднані в Раду молодих вчених. Працює 5 спеціалізованих вчених рад з правом прийняття до захисту докторських дисертацій.
+                            <br>
+                            В університеті традиційно проводиться Всеукраїнська наукова конференція молодих вчених «Актуальні проблеми природничих та гуманітарних наук у дослідженнях молодих вчених», у якій щорічно беруть участь до 650 студентів та магістрантів. Кращі студенти продовжують навчання в аспірантурі університету, інших вишів, НАНУ, а також в університетах Європи, США, Сінгапуру.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- University End -->
+
+    <!-- Specialization Start -->
+    <div class="container-xxl my-5 py-3" id="specialization">
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Кафедра "АКІТ"</h1>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-3 text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="akit-icon akit-icon-1 mb-1"></div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Автоматизація</h4>
+                            <ul class="text-start">
+                                <li>Електроніка та мікропроцесорна техніка</li>
+                                <li>Робототехніка</li>
+                                <li>Виробничі процеси та обладнання обʼєктів автоматизації</li>
+                                <li>Автоматизація технологічних процесів</li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="col-lg-3 text-center wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="akit-icon akit-icon-2 mb-1"></div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Технології</h4>
+                        <ul class="text-start">
+                            <li>Технологія проєктної роботи</li>
+                            <li>Вебтехнології</li>
+                            <li>Інженерна, компʼютерна графіка та дизайн</li>
+                            <li>Робототехнічні комплекси та системи</li>
+                            <li>Інтернет речей</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="akit-icon akit-icon-3 mb-1"></div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Метрологія</h4>
+                        <ul class="text-start">
+                            <li>Технологічні вимірювання та прилади</li>
+                            <li>Системи і методи контролю якості та технічної діагностики</li>
+                            <li>Надійність інформаційно-вимірювальних систем</li>
+                            <li>Системи моніторингу та прогнозування</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="akit-icon akit-icon-4 mb-1"></div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Проєктування</h4>
+                        <ul class="text-start">
+                            <li>Проєктування інформаційно-вимірювальних систем</li>
+                            <li>Проєктування освітніх систем</li>
+                            <li>Проєктування Інтернету речей</li>
+                            <li>Організація баз даних</li>
+                            <li>Компʼютерне моделювання обʼєктів і процесів</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="akit-icon akit-icon-5 mb-1"></div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Програмування</h4>
+                        <ul class="text-start">
+                            <li>Парадигми й технології програмування</li>
+                            <li>Вебпрограмування</li>
+                            <li>Програмування на Python</li>
+                            <li>Технологія розробки програмного забезпечення компʼютерно-інтегрованих систем</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="akit-icon akit-icon-6 mb-1"></div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Освіта</h4>
+                        <ul class="text-start">
+                            <li>Системи відкритої освіти</li>
+                            <li>Технології змішаного навчання</li>
+                            <li>Методологія педагогічних досліджень</li>
+                            <li>Освітні вимірювання</li>
+                            <li>Технології STEM-освіти</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="akit-icon akit-icon-7 mb-1"></div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Інформатика</h4>
+                        <ul class="text-start">
+                            <li>Архітектура компʼютерних систем і мереж</li>
+                            <li>Аналіз і візуалізація даних</li>
+                            <li>Безпека та захист інформації</li>
+                            <li>Компʼютерні методи обробки інформації</li>
+                            <li>Методика навчання інформатики</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="akit-icon akit-icon-8 mb-1"></div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Цифровізація</h4>
+                        <ul class="text-start">
+                            <li>Інформаційно-комунікаційні технології</li>
+                            <li>Адміністрування систем управління навчанням</li>
+                            <li>Вибір, розробка, застосування дистанційних технологій навчання</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Specialization End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
+                    &copy; Богдан Д., лабораторна робота з веб-програмування
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    Виконано в 2024 р.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!--    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>-->
+    <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>-->
+    <script src="./js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/wow/wow.min.js"></script>
+    <script src="./js/easing/easing.min.js"></script>
+    <script src="./js/waypoints/waypoints.min.js"></script>
+    <script src="./js/typed/typed.min.js"></script>
+    <script src="./js/counterup/counterup.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
