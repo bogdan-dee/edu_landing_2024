@@ -4,3 +4,5 @@ dist/*
 !dist/.gitkeep
 builds/*
 !builds/.gitkeep
+src/js/app/dist/*
+!src/js/app/dist/.gitkeep

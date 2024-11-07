@@ -16,11 +16,11 @@ import zip from 'gulp-zip';
 
 var isProduction = mode.production();
 if(isProduction) {
-    console.log("Production mode");
+    console.log("Gulp Production mode");
 }
 var isDevelopment = mode.development();
 if(isDevelopment) {
-    console.log("Development mode");
+    console.log("Gulp Development mode");
 }
 if (isProduction && isDevelopment) {
     throw new Error('Something is wrong with environment settings, it can not be set to development and production at the same time');
@@ -74,9 +74,9 @@ gulp.task('scss', () => {
 
 gulp.task('images:png', () => {
     return gulp.src('./src/img/*.png', {encoding: false})
-        .pipe(imagemin([
-            optipng({optimizationLevel: 5})
-        ]))
+        // .pipe(imagemin([
+        //     optipng({optimizationLevel: 5})
+        // ]))
         .pipe(gulp.dest('./dist/img/'));
 });
 
@@ -89,7 +89,12 @@ gulp.task('images:jpg', () => {
 });
 
 gulp.task('js', () => {
-    return gulp.src('./src/js/*.js')
+    let paths = ['./src/js/app/dist/*.js'];
+    if (isDevelopment) {
+        paths.push('./src/js/app/dist/*.js.map')
+    }
+
+    return gulp.src(paths)
         .pipe(gulp.dest('./dist/js/'));
 });
 
@@ -99,7 +104,7 @@ gulp.task('build', () => {
         throw new Error('This task must be executed in production mode only!');
     }
 
-    return gulp.src('./dist/**')
+    return gulp.src('./dist/**', {encoding: false})
         .pipe(zip(`build-${Date.now()}.zip`, {compress: true}))
         .pipe(gulp.dest('./builds/'));
 });
@@ -115,7 +120,11 @@ gulp.task('watch', () => {
     let htmlWatcher = gulp.watch('./src/*.html', gulp.series('html'));
     htmlWatcher.on('change', (path, stats) => localBrowserSync.reload());
 
-    let jsWatcher = gulp.watch('./src/js/*.js', gulp.series('js'));
+    let jsPaths = ['./src/js/app/dist/*.js'];
+    if (isDevelopment) {
+        jsPaths.push('./src/js/app/dist/*.js.map')
+    }
+    let jsWatcher = gulp.watch(jsPaths, gulp.series('js'));
     jsWatcher.on('change', (path, stats) => localBrowserSync.reload());
 
     let scssWatcher = gulp.watch('./src/css/*.scss', gulp.series('scss'));
