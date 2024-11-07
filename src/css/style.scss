@@ -1,0 +1,249 @@
+$color_primary: #e3a420;
+$color_secondary: #725ab8;
+$color_light: #FAFAFB;
+$color_dark: #12141D;
+$border-color_secondary: #725ab8;
+
+$six_rem: 6rem;
+$three_rem: 3rem;
+
+.my-6 {
+    margin-top: $six_rem;
+    margin-bottom: $six_rem;
+}
+.pty-6 {
+    padding-top: $six_rem;
+}
+.py-3 {
+    padding-top: $three_rem;
+    padding-bottom: $three_rem;
+}
+
+.main-color {
+    color: $color_primary !important;
+}
+.secondary-color {
+    color: $color_secondary !important;
+}
+.secondary-bg {
+    background: $color_secondary !important;
+}
+.secondary-border {
+    border-color: $border-color_secondary !important;
+}
+
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+.btn.btn-primary {
+    color: $color_light;
+}
+.btn.btn-secondary {
+    color: $color_light;
+}
+.btn-square {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+
+.navbar {
+    .navbar-nav {
+        .nav-link {
+            padding: 20px 15px;
+            color: $color_dark;
+            font-size: 18px;
+            font-weight: 600;
+            outline: none;
+            &:hover {
+                color: $color_primary;
+            }
+        }
+        .nav-link.active {
+            color: $color_primary;
+        }
+    }
+}
+
+
+.typed-cursor {
+    font-size: 30px;
+    color: $color_dark;
+}
+
+
+#home {
+    padding-top: $six_rem;
+    margin-bottom: $six_rem;
+    background: url(../img/bg-header.png) left top no-repeat;
+}
+
+.hobby-item {
+    img {
+        transition: .5s;
+    }
+    &:hover {
+        img {
+            opacity: .7;
+        }
+        .hobby-text {
+            right: 30px;
+            opacity: 1;
+            div {
+                margin-left: 30px;
+            }
+        }
+    }
+    .hobby-text {
+        position: absolute;
+        left: 0;
+        right: 60px;
+        bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        opacity: 0;
+        transition: .5s;
+        div {
+            transition: .5s;
+        }
+    }
+}
+
+
+#skill {
+    .progress {
+        height: 5px;
+        border-radius: 5px;
+        .progress-bar {
+            width: 0;
+            border-radius: 5px;
+            transition: 3s;
+        }
+    }
+    .nav-pills {
+        .nav-link {
+            color: $color_dark;
+        }
+        .nav-link.active {
+            color: $color_light;
+            background: var(--secondary) !important;
+            border-color: $border-color_secondary !important;
+        }
+    }
+    .tab-content {
+        hr {
+            width: 30px;
+        }
+    }
+}
+
+
+.service-item {
+    .bg-icon {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+    }
+}
+
+.bg-icon-1 {
+    background: url(../img/bg-icon-1.png) center center no-repeat;
+}
+.bg-icon-2 {
+    background: url(../img/bg-icon-2.png) center center no-repeat;
+}
+.bg-icon-3 {
+    background: url(../img/bg-icon-3.png) center center no-repeat;
+}
+.bg-icon-4 {
+    background: url(../img/bg-icon-4.png) center center no-repeat;
+}
+
+
+.university-image {
+    max-height: 350px;
+}
+
+.akit-icon {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+
+    &-1 {
+        background: url(../img/akit-icon-1.png) center center no-repeat;
+    }
+    &-2 {
+        background: url(../img/akit-icon-2.png) center center no-repeat;
+    }
+    &-3 {
+        background: url(../img/akit-icon-3.png) center center no-repeat;
+    }
+    &-4 {
+        background: url(../img/akit-icon-4.png) center center no-repeat;
+    }
+    &-5 {
+        background: url(../img/akit-icon-5.png) center center no-repeat;
+    }
+    &-6 {
+        background: url(../img/akit-icon-6.png) center center no-repeat;
+    }
+    &-7 {
+        background: url(../img/akit-icon-7.png) center center no-repeat;
+    }
+    &-8 {
+        background: url(../img/akit-icon-8.png) center center no-repeat;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .navbar {
+        .navbar-nav {
+            .nav-link {
+                padding: 10px 0;
+            }
+        }
+    }
+}
